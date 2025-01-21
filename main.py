@@ -71,13 +71,16 @@ def get_short_code(long_code):
 if __name__ == "__main__":
 
     # 1 ==============================
+    print(reverse_no_vowels("hello world")) #dlrw llh
+    
+    # 2 ==============================
     print(count_elements([1,0,1,0,1,1,1], 1)) # 5
 
-    # 2 ==============================
+    # 3 ==============================
     data = [{"instances": 1, "cost": 1000}, {"instances": 2, "cost": 500}, {"instances": 5, "cost": 200}]
     print(find_total_cost(json.dumps(data)))  # 3000
 
-    # 3 =======================
+    # 4 =======================
     short_code = get_short_code("zone42_subnet123")
     print(short_code)# 42-123
 
