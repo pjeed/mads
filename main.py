@@ -12,7 +12,9 @@ def reverse_no_vowels(word):
     hint - range(10, -1, -1) will allow iteration from 10 to 0
     """
 
-    return None
+    # write code here, remove pass statement at the end
+
+    pass
 
 # LEVEL 2 - 10 mins
 def most_common_letters(word1, word2):
