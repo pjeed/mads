@@ -11,9 +11,11 @@ def reverse_no_vowels(word):
     restriction - do not use the built in reverse function for lists
     hint - range(10, -1, -1) will allow iteration from 10 to 0
     """
+    result = ""
 
-    # write code here, remove pass statement at the end
-    pass
+    # write code here
+
+    return result
 
 
 # LEVEL 2 - 20 mins
@@ -30,7 +32,10 @@ def most_common_letters(word1, word2):
        word1 = common, word2 = commotion, return = ['o', 'm'] # both m and o occur atleast twice in both  words
     """
 
-    pass
+    result = []
+
+    # write code here, remove pass statement at the end
+    return result
 
 if __name__ == "__main__":
 
