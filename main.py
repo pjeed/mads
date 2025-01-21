@@ -2,6 +2,18 @@ import re
 import json
 
 # LEVEL 1
+def reverse_no_vowels(word):
+    """
+    :param word: any english word
+
+    :return the word in reverse, while removing all the vowels (a, e, i, o, u)
+    
+    example: word = "hello world" - return = "dlrw llh"
+    """
+
+    return None
+
+# LEVEL 2
 def count_elements(element_list, to_count):
     """
 
@@ -14,8 +26,7 @@ def count_elements(element_list, to_count):
 
     pass
 
-
-# LEVEL 2
+# LEVEL 3
 def find_total_cost(data):
     """
     :param data:
@@ -40,7 +51,8 @@ def find_total_cost(data):
 
     pass
 
-# LEVEL 3
+
+# LEVEL 4
 def get_short_code(long_code):
     """
     :param long_code: <text>#_<text>#, ex. zone4_subnet1
@@ -69,3 +81,4 @@ if __name__ == "__main__":
     short_code = get_short_code("zone42_subnet123")
     print(short_code)# 42-123
 
+# 
