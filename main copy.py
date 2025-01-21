@@ -85,3 +85,35 @@ if __name__ == "__main__":
     print(short_code)# 42-123
 
 # 
+
+
+
+# LEVEL 3 - 15 mins
+def nine_hat(clues):
+    """
+    :param clues: list of clues, sufficient to solve the nine hat puzzle
+    example: - clues = [
+                    ['X1', 'Y1', 'Z1'], ['X2', 'Y2'], ['X3','Y','Z','X','Y','Z','X','Y','Z']
+                ]
+
+    The Game: - sequence of 9 symbols. A symbol is a combination of 'X', 'Y', 'Z' and 1, 2, 3.
+    So X2 is a symbol.
+
+    The sequence must consist of all 9 possible symbols only once.
+    
+    Given the clues, return a list of lists of comma seperate symbols that could possibly be the solution that fits all the clues/
+
+    For the example above, since the last sequence ensures X, Y and Z are repeating in that order, and clue 1 says X1, X2 and X3 must be in order, and clue2 says Y2 must follow X2
+    The solution is 2 possible sequences:
+
+    solution = [['X3','Y3','Z3','X1','Y1','Z1','X2','Y2','Z2'],
+                ['X3','Y3','Z3','X2','Y2','Z2','X1','Y1','Z1']]
+
+    """
+
+    # write code here, remove pass statement at the end
+
+    pass
+
+   # 3 ==============================
+    print(nine_hat([['X1', 'Y1', 'Z1'], ['X2', 'Y2'], ['X3','Y','Z','X','Y','Z','X','Y','Z']]))

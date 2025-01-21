@@ -13,7 +13,13 @@ def reverse_no_vowels(word):
     """
 
     # write code here, remove pass statement at the end
-    pass
+    result = ""
+    
+    for i in range(len(word)-1, -1, -1):
+        if word[i] not in ['a', 'e','i','o', 'u']:
+            result += word[i]
+
+    return result
 
 
 # LEVEL 2 - 20 mins
@@ -30,7 +36,41 @@ def most_common_letters(word1, word2):
        word1 = common, word2 = commotion, return = ['o', 'm'] # both m and o occur atleast twice in both  words
     """
 
-    pass
+    result = []
+    max_count = 0
+
+    common_letters = []
+    
+    #
+    letter_map_word1 = {}
+    letter_map_word2 = {}
+    # write code here, remove pass statement at the end
+    for i in range(len(word1)):
+        if word1[i] in letter_map_word1:
+            letter_map_word1[word1[i]] += 1
+        else:
+            letter_map_word1[word1[i]] = 1
+
+    for i in range(len(word2)):
+        if word2[i] in letter_map_word2:
+            letter_map_word2[word2[i]] += 1
+        else:
+            letter_map_word2[word2[i]] = 1
+        
+        if word2[i] in letter_map_word1 and word2[i] not in common_letters:
+            common_letters.append(word2[i])
+    
+    for cl in common_letters:
+        num_times = min(letter_map_word1[cl],  letter_map_word2[cl])
+        if num_times > max_count:
+            max_count = num_times
+            result = [cl]
+        elif num_times == max_count:
+            result.append(cl)
+
+
+
+    return result
 
 if __name__ == "__main__":
 
