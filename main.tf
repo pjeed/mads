@@ -33,7 +33,7 @@ locals{
 
 resource "azurerm_resource_group" "this" {
   name     = "my_resource_group"
-  location = "EastUS"
+  location = "eastus"
 }
 
 
